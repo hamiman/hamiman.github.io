@@ -71,3 +71,79 @@
 
 
 	/*-- end change css default bootstrap --*/
+	html,body{
+		height: 100%;
+	}
+	/*  image hero */
+	.header-area {
+	    background: url(../img/4.jpg) no-repeat scroll 0 0 / cover;
+	    background-size: cover;
+	    position: relative;
+	    height: 100%;
+	    background-position: center center;
+	}
+	/* ************ */
+	/* uncomment for animate loading page */
+	/* .header-area:before{
+		background:rgba(0,0,0,0.23);
+		position:absolute;
+		left:0;top:0;
+		width:100%;
+		height:100%;
+		content:""
+	} */
+	/* //end image hero */
+	
+	/* ************ */
+	.about{
+		min-height: 600px;
+		padding-top: 50px;
+	}
+	.portfolio{
+		min-height: 600px;
+	}
+	.contact-image{
+		background: url(../img/3.filter.png) no-repeat scroll 0 0 / cover;
+	    background-size: cover;
+	    background-position: center center;
+		min-height: 600px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin-bottom: 30px;
+		.icon-circle{
+			font-size: 50px;
+			color: #fff;
+		}
+		p{
+			color: #fff;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		hr{
+			max-width: 100px;
+			border-top: 3px solid #aaa;
+		}
+		.icon {
+			margin-top: 100px;
+		}
+	}
+	.contact{
+		min-height: 800px;
+	}
+	footer{
+		width: 100%;
+		min-height: 100px;
+		background-color: #333;
+		color: #aaa;
+		padding: 40px;
+		p i {
+			color: salmon;
+		}
+		a.btn{
+			margin: 2px;
+		}
+	}
+	hr{
+		max-width: 200px;
+		border-top: 3px solid #aaa;
+	}

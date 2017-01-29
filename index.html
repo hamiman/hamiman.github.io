@@ -13,6 +13,7 @@
 	<!-- **************** -->
 	<!-- Bootstrap.min.css online -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 	<!-- **************** -->
 	<!-- Bootstrap.min.css offline -->
   	<!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -32,8 +33,14 @@
 </head>
  <body>
 
+ 	<!-- header area -->
+ 	<header class='header-area' id="home">
+ 		
+ 	</header>
+ 	<!-- /end header area -->
+
  	<!-- navbar -->
-	 <nav class="navbar navbar-default navbar-fixed-top">
+	 <nav id="fix" class="navbar navbar-default">
 	 	<div class="container">
 	 		<div class="navbar-header">
 	 			<!-- burger menu -->
@@ -46,14 +53,14 @@
 					</div>
 				</div>
 				<!-- end burger menu -->
-	 			<a href="#home" class="navbar-brand">iman mim</a>
+	 			<a href="#home" class="navbar-brand" class="page-scroll">iman mim</a>
 	 		</div>
 
 			<div class="collapse navbar-collapse" id="myCollapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about" class="page-scroll">About</a></li>
+					<li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
+					<li><a href="#contact" class="page-scroll">Contact</a></li>
 				</ul>
 			</div>
 
@@ -61,12 +68,187 @@
 	 </nav>
 	 <!-- end navbar -->
 
+	 <!-- about -->
+	<section class="about" id="about">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2>About</h2>
+					<hr>
+				</div>
+			</div><!--//end row -->
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-2">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo ipsum accusamus sunt saepe hic vero nostrum voluptatum ad nesciunt.</p>
+				</div>
+				<div class="col-sm-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit in animi sed reiciendis quaerat minus deleniti harum hic alias. Soluta placeat delectus laboriosam, illo dolor.</p>
+				</div>
+			</div><!--//end row -->
+		</div>
+	</section>
+	 <!-- //end about -->
+
+	 <!-- portfolio -->
+	 <section class="portfolio" id="portfolio">
+	 	<div class="container">
+	 		<div class="row">
+	 			<div class="col-sm-12 text-center">
+	 				<h2>Portfolio</h2>
+	 				<hr>
+	 			</div>
+	 		</div><!--//end row -->
+
+	 		<div class="row">
+	 			<div class="col-sm-4">
+	 				<a href="#" class="thumbnail">
+	 					<img src="img/using-scss.png" alt="using scss">
+	 				</a>
+	 			</div>
+
+	 			<div class="col-sm-4">
+	 				<a href="#" class="thumbnail">
+	 					<img src="img/using-scss.png" alt="using scss">
+	 				</a>
+	 			</div>
+
+	 			<div class="col-sm-4">
+	 				<a href="#" class="thumbnail">
+	 					<img src="img/using-scss.png" alt="using scss">
+	 				</a>
+	 			</div>
+
+	 			<div class="col-sm-4">
+	 				<a href="#" class="thumbnail">
+	 					<img src="img/using-scss.png" alt="using scss">
+	 				</a>
+	 			</div>
+
+	 			<div class="col-sm-4">
+	 				<a href="#" class="thumbnail">
+	 					<img src="img/using-scss.png" alt="using scss">
+	 				</a>
+	 			</div>
+
+	 			<div class="col-sm-4">
+	 				<a href="#" class="thumbnail">
+	 					<img src="img/using-scss.png" alt="using scss">
+	 				</a>
+	 			</div>
+	 			
+	 		</div><!--//end row -->
+	 	</div>
+	 </section>
+	 <!-- //end portfolio -->
+
+	 <!-- contact -->
+	 <section id="contact">
+	 	<div class="container">
+	 		<div class="row">
+		 		<div class="col-sm-12 text-center">
+		 			<h2>Contact</h2>
+		 			<hr>
+		 		</div>
+		 	</div><!--//end row -->
+	 	</div>
+	 </section>
+
+	 <section class="contact-image">
+	 <div class="container-filter">
+	 <div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="col-sm-6 text-center icon">
+					<i class="fa fa-user icon-circle" aria-hidden="true"></i>
+					<p class="contact-info">Hamiman</p>
+					<hr>
+				</div>
+				<div class="col-sm-6 text-center icon">
+					<i class="fa fa-envelope icon-circle" aria-hidden="true"></i>
+					<p class="contact-info">16.hamiman@ gmail.com</p>
+					<hr>
+				</div>
+				<div class="col-sm-6 text-center icon">
+					<i class="fa fa-mobile-phone icon-circle" aria-hidden="true"></i>
+					<p class="contact-info">+62 85693828888</p>
+					<hr>
+				</div>
+				<div class="col-sm-6 text-center icon">
+					<i class="fa fa-map-marker icon-circle" aria-hidden="true"></i>
+					<p class="contact-info">Sukabumi, Jawa Barat</p>
+					<hr>
+				</div>
+				
+			</div>
+		</div>	
+	</div> 	
+	</section>
+
+	 <section class="contact">
+		<div class="container">
+
+		 	<div class="row">
+		 		<div class="col-sm-8 col-sm-offset-2">
+		 			<form action="">
+		 			<div class="form-group">
+		 				<label for="name">Nama</label>
+		 				<input type="text" class="form-control" id="name" placeholder="Masukan Nama">
+		 			</div>
+		 			<div class="form-group">
+		 				<label for="email">Email</label>
+		 				<input type="email" class="form-control" id="email" placeholder="Masukan Email">
+		 			</div>
+		 			<div class="form-group">
+		 				<label for="telp">No Telepon</label>
+		 				<input type="telp" class="form-control" id="telp" placeholder="Masukan No Telepon">
+		 			</div>
+
+		 			<select name="" id="" class="form-control">
+		 				<option>-- Hire Me For --</option>
+		 				<option>Web Design</option>
+		 				<option>Web Developer</option>
+		 			</select>
+
+		 			<div class="form-group">
+		 				<label for="pesan">Pesan</label>
+		 				<textarea class="form-control" id="pesan" placeholder="Masukan Pesan" rows="10"></textarea>
+		 			</div>
+		 			<button type="submit" class="btn btn-primary">Kirim Pesan</button>
+		 			
+		 			</form>
+		 		</div>
+		 	</div><!--//end row -->
+		 </div>
+		 </div><!-- //end container-filter -->
+	 </section>
+	 <!-- //end contact -->
+
+	 <!-- footer -->
+	 <footer>
+	 	<div class="container text-center">
+	 		<div class="row">
+	 			<div class="col-sm-12">
+	 				<p>&copy; copyright 2017 | built with <i class="glyphicon glyphicon-heart"></i> by. <a href="#">iman mim</a></p>
+	 			</div>
+	 		</div><!--//end row -->
+
+	 		<div class="row">
+	 			<div class="col-sm-12">
+	 				<a href="#" class="btn btn-primary"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a>
+
+	 				<a href="#" class="btn btn-danger"><i class="fa fa-youtube-play" aria-hidden="true"></i> Subscribe</a>
+	 			</div>
+	 		</div><!--//end row -->
+	 	</div>
+	 </footer>
+	 <!-- //end footer -->
 
 
 
 
 
 
+	<script src="https://use.fontawesome.com/00250c4e72.js"></script>
 	<!-- **************** -->
 	<!-- jquery.min-3.1.1.js online -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -77,8 +259,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
  	<!-- **************** -->
-	<!-- jquery.min-3.1.1.js and bootstrap.min.js offline -->
+	<!-- jquery.min-3.1.1.js jquery easing.js and bootstrap.min.js offline -->
 	<!-- <script src="js/jquery/jquery.js"></script> -->
+	<script src="js/jquery/jquery.easing.js"></script>
  	 <!-- Include all compiled plugins (below), or include individual files as needed -->
   	<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
 
