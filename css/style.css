@@ -159,7 +159,7 @@ html, body {
   color: #d3c3b6;
 }
 .header-area .inner-background .social-icon a i.fa-github:hover {
-  color: white;
+  color: black;
 }
 
 @-webkit-keyframes blink-text {
