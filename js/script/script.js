@@ -25,6 +25,30 @@
 				scrollTop: elementHref.offset().top - 50
 			},1500,"easeInOutExpo");
 		});
+		//typed.js plugin
+        $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+	        // typing speed
+			typeSpeed: 50,
+			// time before typing starts
+			startDelay: 0,
+			// backspacing speed
+			backSpeed: 50,
+			// shuffle the strings
+			shuffle: false,
+			// time before backspacing
+			backDelay: 1500,
+			// loop
+			loop: true,
+			// false = infinite
+			loopCount: false,
+			// show cursor
+			showCursor: true,
+			// character for cursor
+			cursorChar: "|",
+	    });
+	    
+
 		// *****
 	});
 	

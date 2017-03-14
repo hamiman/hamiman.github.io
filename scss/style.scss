@@ -1,3 +1,51 @@
+ 	/* //@media queries */
+ 	//xtra-small devices -xs bootstrap
+	@media only screen and (max-width: 768px){
+	}
+
+	//small devices -sm bootstrap
+	@media screen and (min-width: 768px){
+		#burger-container {
+			display: none;
+		}
+	}
+	//medium devices -md bootstrap
+	@media screen and (min-width: 992px){
+	
+	}
+
+	//large devices -lg bootstrap
+	@media screen and (min-width: 1200px){
+	
+	}
+
+
+  	/*-- change css default bootstrap --*/
+  	.navbar-default{
+  		margin-bottom: 0;
+  		ul.nav.navbar-nav.navbar-right a:hover{
+  			background-color: #ddd;
+  			color: #2fb2ca;
+  		}
+	  	.navbar-toggle {
+	  		border-color: rgba(0,0,0,0);
+		    position: relative;
+		    float: right;
+		    padding: 9px 10px;
+		    margin-top: 8px;
+		    margin-right: 15px;
+		    margin-bottom: 8px;
+		    background-color: transparent;
+		    background-image: none;
+		    border-radius: 4px;
+		}
+  	}
+	.navbar-default .navbar-toggle:hover {
+		background-color: rgba(0,0,0,0);
+	}
+
+	/*-- end change css default bootstrap --*/
+
   	/* --- burger menu ---*/
 
 	#burger-container{
@@ -8,7 +56,7 @@
 		right: -10px;
 	}
 	#burger-container.open span{
-		background-color: salmon;
+		background-color: #2fb2ca;
 		&:nth-child(2),
 		&:nth-child(3){
 			width: 0;
@@ -44,49 +92,97 @@
 		}
 		
 	}
-
-	@media screen and (min-width: 768px){
-			#burger-container {
-				display: none;
-			}
+	.navbar-brand{
+		position: relative;
+		top: -12px;
+		img{
+			max-width: 200px;
 		}
+	}
   	/*-- end burger menu --*/
 
-  	/*-- change css default bootstrap --*/
-  	.navbar-default{
-  		ul.nav.navbar-nav.navbar-right a:hover{
-  			background-color: #ddd;
-  			color: salmon;
-  		}
-	  	.navbar-toggle {
-	  		border-color: rgba(0,0,0,0);
-		    position: relative;
-		    float: right;
-		    padding: 9px 10px;
-		    margin-top: 8px;
-		    margin-right: 15px;
-		    margin-bottom: 8px;
-		    background-color: transparent;
-		    background-image: none;
-		    border-radius: 4px;
-		}
-  	}
-	.navbar-default .navbar-toggle:hover {
-		background-color: rgba(0,0,0,0);
-	}
-
-
-	/*-- end change css default bootstrap --*/
 	html,body{
 		height: 100%;
+		font-family: 'Leelawadee', arial, sans-serif;
 	}
+
 	/*  image hero */
 	.header-area {
-	    background: url(../img/4.jpg) no-repeat scroll 0 0 / cover;
+	    background: url(../img/do-more.jpg) no-repeat scroll 0 0 / cover;
 	    background-size: cover;
 	    position: relative;
 	    height: 100%;
 	    background-position: center center;
+	    .inner-background{
+	    	background-color: rgba(0,0,0,.4);
+	    	width: 100%;
+	    	height: 100%;
+		    display: flex;
+		    align-items: center;
+		    
+	    	.name-header{
+	    		font-size: 14vmin;
+		    	color: #fff;
+		    	font-family: 'Bauhaus 93', arial, sans-serif;
+		    	letter-spacing: 1.5px;
+		    	position: relative;
+		    	span {
+		    		color: #2fb2ca;
+		    		text-decoration: underline;
+		    	}
+		    }
+		    .hello-header{
+		    	font-size: 6vmin;
+		    	color: #fff;
+		    	font-family: 'Architects Daughter', cursive;
+		    	font-weight: bold;
+		    	letter-spacing: 1.5px;
+		    	span{
+					animation: blink-text 1s ease-in-out 0s infinite alternate;
+		    	}
+		    }
+		    .typed-strings{
+				display: none;
+		    }
+		    .wrapper-typed{
+				// min-height: 50px;
+
+			    .typed{
+			    	font-size: 6vmin;
+			    	color: #fff;
+			    	letter-spacing: 1.5px;
+			    }
+		    }
+		    .social-icon {
+		    	a i{
+		    		color: rgba(255,255,255,.4);
+		    		font-size: 6vmin;
+		    		margin: 20vmin 1vmin 1vmin;
+		    	}
+		    	a i.fa-facebook:hover {
+					color: rgba(72,107,180,1);
+		    	}
+		    	a i.fa-youtube-play:hover {
+		    		color: rgba(180,60,59,1);
+		    	}
+		    	a i.fa-instagram:hover {
+		    		color: rgba(211,195,182,1);
+		    	}
+		    	a i.fa-github:hover {
+		    		color: rgba(0,0,0,1);
+		    	}
+		    }
+	    }
+	}
+	@keyframes blink-text {
+		0%{
+			color: #2fb2ca;
+			opacity: 0.5;
+		}
+		100%{
+			color: #fff;
+			opacity: 1;
+		}
 	}
 	/* ************ */
 	/* uncomment for animate loading page */
@@ -101,12 +197,126 @@
 	/* //end image hero */
 	
 	/* ************ */
+	.padding-bottom-1{
+		padding-bottom: 10vmin;
+	}
+	.padding-bottom-2{
+		padding-bottom: 15vmin;
+	}
 	.about{
 		min-height: 600px;
 		padding-top: 50px;
+		background-color: #fff;
+		.about-me {
+			width: 100%;
+			height: auto;
+			p.blink-text-2{
+				animation: blink-text-2 1s ease-in-out 0s infinite alternate;
+			}
+		}
+		p {
+			font-size: 1.2em;
+			letter-spacing: 1.3px;
+			
+		}
+		.title{
+			font-size: 1.5em;
+			color: #2fb2ca;
+			text-decoration: underline;
+		}
+		blockquote p{
+			opacity: 0.5;
+		}
+		.skills{
+			display: flex;
+			justify-content: center;
+			.skills-bar{
+				border: 1px solid #ddd;
+				background-color: #ddd;
+				flex-basis: 300px;
+				border-radius: 4px;
+			} 
+			.score1{
+				display: block;
+				background-image: linear-gradient(-90deg,rgba(47,178,202,.4),rgba(255,255,255,.4));
+				max-width: 65%;
+				height: 12px;
+				border-radius: 2px;
+			}
+			.score2{
+				display: block;
+				background-image: linear-gradient(-90deg,rgba(47,178,202,.4),rgba(255,255,255,.4));
+				max-width: 50%;
+				height: 12px;
+				border-radius: 2px;
+			}
+			.score3{
+				display: block;
+				background-image: linear-gradient(-90deg,rgba(47,178,202,.4),rgba(255,255,255,.4));
+				max-width: 55%;
+				height: 12px;
+				border-radius: 2px;
+			}
+			.score4{
+				display: block;
+				background-image: linear-gradient(-90deg,rgba(47,178,202,.4),rgba(255,255,255,.4));
+				max-width: 55%;
+				height: 12px;
+				border-radius: 2px;
+			}
+			.score5{
+				display: block;
+				background-image: linear-gradient(-90deg,rgba(47,178,202,.4),rgba(255,255,255,.4));
+				max-width: 80%;
+				height: 12px;
+				border-radius: 2px;
+			}
+			.score6{
+				display: block;
+				background-image: linear-gradient(-90deg,rgba(47,178,202,.4),rgba(255,255,255,.4));
+				max-width: 80%;
+				height: 12px;
+				border-radius: 2px;
+			}
+			.score7{
+				display: block;
+				background-image: linear-gradient(-90deg,rgba(47,178,202,.4),rgba(255,255,255,.4));
+				max-width: 75%;
+				height: 12px;
+				border-radius: 2px;
+			}
+			.score-animate{
+					display: block;
+					background-image: linear-gradient(-90deg,#2fb2ca,#fff);
+					max-width: 80%;
+					height: 12px;
+					border-radius: 2px;
+					animation: animate-bar 2s ease-in-out 0s infinite;
+				}
+		}
 	}
+	@keyframes blink-text-2 {
+		0%{
+			color: #2fb2ca;
+			opacity: 0.5;
+		}
+		100%{
+			color: #000;
+			opacity: 1;
+		}
+	}
+	@keyframes animate-bar {
+		0%{
+			max-width: 0%;
+		}
+		100%{
+			max-width: 100%;
+		}
+	}
+
 	.portfolio{
 		min-height: 600px;
+		background-color: #fff;
 	}
 	.contact-image{
 		background: url(../img/3.filter.png) no-repeat scroll 0 0 / cover;
@@ -116,18 +326,19 @@
 		padding-top: 50px;
 		padding-bottom: 50px;
 		margin-bottom: 30px;
-		.icon-circle{
+		.icon-fav{
 			font-size: 50px;
-			color: #ddd;
+			color: #fff;
+			padding-bottom: 20px;
 		}
 		p{
-			color: #ddd;
+			color: #fff;
 			font-size: 24px;
 			font-weight: bold;
 		}
 		hr{
 			max-width: 100px;
-			border-top: 3px solid #aaa;
+			border-top: 3px solid #2fb2ca;
 		}
 		.icon {
 			margin-top: 100px;
@@ -151,5 +362,96 @@
 	}
 	hr{
 		max-width: 200px;
-		border-top: 3px solid #aaa;
+		border-top: 3px solid #2fb2ca;
 	}
+
+	/* ************ */
+	/* image gallery */
+
+	.overlay-image{
+		position: fixed;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		top: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0);
+		z-index: 9999;
+		transition: 1s;
+		text-align: center;
+		&:target{
+		width: auto;
+		height: auto;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,.7);
+		img{
+			animation: zoomImage 1s;
+		}
+		.close{
+			animation: zoomImage 1s;
+		}
+		}
+		img{
+			max-height: 100%;
+			max-width: 100%;
+			padding: 50px 10px 10px;
+		}
+		.close{
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			margin-left: -10px;
+			padding: 1px 8px 4px;
+			border-radius: 100%;
+			background-color: #fff;
+			color: #2fb2ca;
+			opacity: 1;
+			&:hover{
+				color: #fff;
+				background-color: rgba(0,0,0,.2);
+			}
+		}
+
+	}
+
+
+	@keyframes zoomImage {
+		0%{
+			transform: scale(0);
+			opacity: 0;
+		}
+		100%{
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+
+	/* Add this for the animated blinking cursor. */
+	.typed-cursor{
+		font-size: 6vmin;
+		color: #fff;
+		letter-spacing: 1.5px;
+	    opacity: 1;
+	    -webkit-animation: blink 0.8s infinite;
+	    -moz-animation: blink 0.8s infinite;
+	    animation: blink 0.8s infinite;
+	}
+	@keyframes blink{
+	    0% { opacity:1; }
+	    50% { opacity:0; }
+	    100% { opacity:1; }
+	}
+	@-webkit-keyframes blink{
+	    0% { opacity:1; }
+	    50% { opacity:0; }
+	    100% { opacity:1; }
+	}
+	@-moz-keyframes blink{
+	    0% { opacity:1; }
+	    50% { opacity:0; }
+	    100% { opacity:1; }
+	}
+
+
+
