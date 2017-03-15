@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Leelawadee";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/leelawad.woff") format("woff");
+}
+@font-face {
+  font-family: 'Bauhaus-93';
+  src: url("bauhaus-93-webfont.woff2") format("woff2"), url("bauhaus-93-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* //@media queries */
 @media screen and (min-width: 768px) {
   #burger-container {
@@ -117,7 +129,7 @@ html, body {
 .header-area .inner-background .name-header {
   font-size: 14vmin;
   color: #fff;
-  font-family: 'Bauhaus 93', arial, sans-serif;
+  font-family: 'Bauhaus-93', arial, sans-serif;
   letter-spacing: 1.5px;
   position: relative;
 }
